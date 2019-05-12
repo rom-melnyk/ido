@@ -1,0 +1,19 @@
+{
+  "name": "ido",
+  "version": "1.0.0",
+  "description": "Set Goals and track Achievements with iDo",
+  "main": "server/server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ts",
+    "typescript",
+    "goal",
+    "achievement",
+    "gamification"
+  ],
+  "author": "Roman Melnyk <https://melnyk.site>",
+  "license": "UNLICENSED",
+  "private": true
+}

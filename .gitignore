@@ -1,0 +1,15 @@
+.idea/
+.vscode/
+
+node_modules/
+npm-debug.log
+
+docs/CREDS.md
+server/creds.json
+
+*.map
+static/css/*.css
+static/js/*.js
+static/gfx/uploaded/
+
+tmp/
