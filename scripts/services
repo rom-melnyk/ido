@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sudo systemctl status mysql
+sudo systemctl start mysql && sudo journalctl -u mysql
