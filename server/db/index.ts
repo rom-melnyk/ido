@@ -1,7 +1,6 @@
-import { ConnectionOptions, createConnection } from 'typeorm';
-import * as creds from '../creds.json';
-import * as dbConfig from './config.json';
+import { createConnection } from 'typeorm';
+import config from './config';
 
 export async function connect() {
-  return await createConnection({ ...dbConfig, ...creds.db } as ConnectionOptions);
+  return await createConnection(config);
 }
