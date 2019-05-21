@@ -41,6 +41,11 @@
 1. Check `npm run` for other possibilities (e.g. `server:dev`).
 
 
+## Technical notes
+
+1. For the sake of consistency all the config files are JS with `module.exports = {...};`. Other config integrates hard into TypeORM CLI.
+
+
 ## Credits
 
 Roman Melnyk <https://melnyk.site>
