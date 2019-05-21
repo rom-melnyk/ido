@@ -29,7 +29,7 @@ module.exports = {
   ],
 
   cli: {
-    migrationsDir: 'server/db/migration/'
+    migrationsDir: 'server/db/migration'
   },
 
 };
