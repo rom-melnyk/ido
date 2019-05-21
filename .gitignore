@@ -5,7 +5,7 @@ node_modules/
 npm-debug.log
 
 docs/CREDS.md
-server/creds.json
+server/creds.js
 
 *.map
 static/css/*.css
