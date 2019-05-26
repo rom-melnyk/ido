@@ -5,7 +5,7 @@
   "main": "server/server.ts",
   "scripts": {
     "_server": "concurrently -n SERVER,CLIENT \"ts-node server/server.ts\" \"echo Client app placeholder\"",
-    "server:dev": "ts-node-dev --inspect --ignore-watch node_modules --respawn server/server.ts",
+    "server:dev": "ts-node-dev --inspect --ignore-watch node_modules --ignore-watch server/db/migration --respawn server/server.ts",
     "server:prod": "ts-node server/server.ts",
     "orm": "ts-node node_modules/typeorm/cli.js --config server/db/db-config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
