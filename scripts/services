@@ -1,4 +1,26 @@
 #!/bin/sh
 
-sudo systemctl status mysql
-sudo systemctl start mysql && sudo journalctl -u mysql
+case $1 in
+st)
+  sudo systemctl status mysql
+  ;;
+up)
+  sudo systemctl start mysql && sudo systemctl status mysql
+  ;;
+down)
+  sudo systemctl stop mysql && sudo systemctl status mysql
+  ;;
+logs)
+  sudo journalctl -u mysql
+  echo
+  sudo systemctl status mysql
+  ;;
+*)
+  echo "service [st | up | down | logs]"
+  echo
+  echo "  st        status"
+  echo "  up        start + status"
+  echo "  down      stop"
+  echo "  logs      latest logs + status"
+  echo
+esac
