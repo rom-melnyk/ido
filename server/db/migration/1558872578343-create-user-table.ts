@@ -28,8 +28,8 @@ export class createUserTable1558872578343 implements MigrationInterface {
 
     await queryRunner.createForeignKey('challenge', new TableForeignKey({
       columnNames: ['created_by'],
-      referencedColumnNames: ['id'],
       referencedTableName: 'user',
+      referencedColumnNames: ['id'],
       onUpdate: 'CASCADE',
       onDelete: 'CASCADE',
     }));
